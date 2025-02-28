@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadhan 2025</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #0a3d62; color: #fff; overflow: hidden; text-align: center; }
+        .container { position: relative; width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .slide { position: absolute; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 1.5s ease-in-out; }
+        .slide.active { opacity: 1; }
+        h1 { font-size: 3rem; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); }
+        p { font-size: 1.2rem; margin-top: 10px; }
+        .background { position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-size: cover; background-position: center; z-index: -1; background-image: url('Latar belakang Background Idul Fitri Atau Ramadhan Latar Belakang Kosong Dengan Pola Islam Gambar Wallpaper Untuk Download Gratis - Pngtree.jpg'); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <div class="slide active">
+            <h1>Selamat Menunaikan Ibadah Puasa</h1>
+            <p>Ramadhan 2025 telah tiba, mari perbanyak ibadah dan kebaikan.</p>
+        </div>
+        <div class="slide">
+            <h1>Marhaban Ya Ramadhan</h1>
+            <p>Bulan penuh berkah dan ampunan telah tiba.</p>
+        </div>
+        <div class="slide">
+            <h1>Jadikan Ramadhan Penuh Makna</h1>
+            <p>Perbanyak doa, dzikir, dan sedekah.</p>
+        </div>
+        <div class="slide">
+            <h1>Pesan Dari Saya</h1>
+            <p>Ramadhan adalah bulan penuh berkah, ampunan, dan kesempatan untuk memperkuat iman dan spiritualitas kita. 
+                Semoga Ramadhan kali ini membawa kedamaian dan keberkahan bagi kita semua.</p>
+        </div>
+    </div>
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        function changeSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        setInterval(changeSlide, 4000);
+    </script>
+</body>
+</html>
